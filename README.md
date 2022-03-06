@@ -1,1 +1,2 @@
-# stateManagers
+# StateManagers
+Compare state managers

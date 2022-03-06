@@ -1,0 +1,11 @@
+.app {
+    background-color: white;
+
+    &Container {
+        width: 640px;
+        max-width: 100%;
+        margin: 20px auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
