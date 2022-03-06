@@ -1,10 +1,11 @@
 import React from 'react';
-import styles from './app.module.scss';
 
 function App() {
   return (
-    <div className={styles.appContainer}>
-        some text
+    <div className="bg-gradient-to-br from-blue-200 to-violet-200 p-4">
+        <div className="max-w-6xl ml-auto mr-auto">
+            some text
+        </div>
     </div>
   );
 }
