@@ -1,10 +1,13 @@
 import React from 'react';
+import AddTodo from "../addTodo/AddTodo";
+import TaskList from "../taskList/TaskList";
 
 function App() {
   return (
-    <div className="bg-gradient-to-br from-blue-200 to-violet-200 p-4">
-        <div className="max-w-6xl ml-auto mr-auto">
-            some text
+    <div className="p-16 h-full">
+        <div className="max-w-6xl ml-auto mr-auto shadow-2xl rounded-xl p-8">
+            <AddTodo />
+            <TaskList/>
         </div>
     </div>
   );
