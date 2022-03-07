@@ -8,8 +8,16 @@ const Task = ({title}) => {
                 {title}
             </div>
             <div>
-                <Button title="Edit"/>
-                <Button title="Delete"/>
+                <Button
+                    title="Edit"
+                    className="p-2 mr-5 text-sm text-blue-500 border border-solid border-2 border-blue-500 rounded-lg w-20
+    hover:text-white hover:bg-blue-500 transition-colors"
+                />
+                <Button
+                    title="Delete"
+                    className="p-2 mr-5 text-sm text-orange-500 border border-solid border-2 border-orange-500 rounded-lg w-20
+    hover:text-white hover:bg-orange-500 transition-colors"
+                />
             </div>
         </div>
     );
