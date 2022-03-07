@@ -1,0 +1,13 @@
+.add-todo-wrapper {
+    @apply flex mb-10;
+}
+
+.add-todo-button {
+    @apply p-2 text-sm text-green-500 border border-solid border-2 border-green-500 rounded-lg w-32
+    hover:text-white hover:bg-green-500 transition-colors;
+}
+
+.add-todo-input {
+    @apply basis-full mr-4 bg-transparent font-normal outline-none border-b transition-colors
+    focus:text-green-500 focus:border-b-green-500;
+}
