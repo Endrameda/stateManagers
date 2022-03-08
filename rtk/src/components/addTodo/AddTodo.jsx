@@ -13,7 +13,7 @@ const AddTodo = () => {
     const onClickButtonHandler = () => {
         if (title) {
             dispatch(addTodo({
-                title: title,
+                title,
                 id: nanoid()
             }));
 
