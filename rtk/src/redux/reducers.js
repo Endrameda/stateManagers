@@ -1,5 +1,7 @@
-const reducers = {
+import todoReducer from "./todo/reducer";
 
+const reducers = {
+    todoReducer
 }
 
 
