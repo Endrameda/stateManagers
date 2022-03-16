@@ -4,7 +4,7 @@ import Button from "../button/Button";
 const Task = ({title}) => {
     return (
         <div className="flex justify-between py-8 first:pt-0 last:pb-0">
-            <div>
+            <div className="text-gray-500">
                 {title}
             </div>
             <div>

@@ -1,5 +1,5 @@
-import {createAction} from "@reduxjs/toolkit";
-import {nanoid} from "nanoid";
+import {createAction, nanoid} from "@reduxjs/toolkit";
+
 
 export const addTodo = createAction('todo/addTodo', ({title}) => ({
     payload: {

@@ -1,8 +1,16 @@
 import React from 'react';
 import AddTodo from "../addTodo/AddTodo";
 import TaskList from "../taskList/TaskList";
+import {useGetPokemonByNameQuery} from "../../redux/pokeAPI";
+import {skipToken} from "@reduxjs/toolkit/query";
 
 function App() {
+    const { data, error, isLoading } = useGetPokemonByNameQuery(null ?? skipToken)
+
+    console.log('data: ', data)
+    console.log('isLoading: ', isLoading)
+    console.log('error: ', error)
+
     return (<div className="p-16 h-full">
             <div className="max-w-6xl ml-auto mr-auto shadow-2xl rounded-xl p-8">
                 <AddTodo/>
