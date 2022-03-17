@@ -8,9 +8,14 @@ export const pokemonApi = createApi({
             baseUrl: 'https://pokeapi.co/api/v2/'
         }
     ),
+    tagTypes: ['Pokemon'],
     endpoints: (builder) => ({
         getPokemonByName: builder.query({
             query: (name) => `pokemon/${name}`,
+            transformResponse: (response, error, id) =>
+                response,
+            providesTags: (result, error, id) => [
+                {type: 'Pokemon', id}]
         }),
     }),
 })

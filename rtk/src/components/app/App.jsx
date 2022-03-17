@@ -2,10 +2,9 @@ import React from 'react';
 import AddTodo from "../addTodo/AddTodo";
 import TaskList from "../taskList/TaskList";
 import {useGetPokemonByNameQuery} from "../../redux/pokeAPI";
-import {skipToken} from "@reduxjs/toolkit/query";
 
 function App() {
-    const { data, error, isLoading } = useGetPokemonByNameQuery(null ?? skipToken)
+    const { data, error, isLoading } = useGetPokemonByNameQuery('bulbasaur')
 
     console.log('data: ', data)
     console.log('isLoading: ', isLoading)
