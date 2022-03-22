@@ -1,5 +1,4 @@
-
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
+import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 
 export const pokemonApi = createApi({
     reducerPath: 'pokemonApi',
@@ -9,15 +8,16 @@ export const pokemonApi = createApi({
         }
     ),
     tagTypes: ['Pokemon'],
-    endpoints: (builder) => ({
-        getPokemonByName: builder.query({
+    endpoints: (build) => ({
+        getPokemonByName: build.query({
             query: (name) => `pokemon/${name}`,
             transformResponse: (response, error, id) =>
                 response,
             providesTags: (result, error, id) => [
-                {type: 'Pokemon', id}]
+                {type: 'Pokemon', id}
+            ],
         }),
     }),
-})
+});
 
-export const { useGetPokemonByNameQuery } = pokemonApi
+export const {useGetPokemonByNameQuery} = pokemonApi;
