@@ -2,7 +2,6 @@ import React from 'react';
 import AddTodo from "../addTodo/AddTodo";
 import TaskList from "../taskList/TaskList";
 import {pokemonApi, useGetPokemonByNameQuery} from "../../redux/pokeAPI";
-import {store} from "../../redux/store";
 
 function App() {
     const hookState = useGetPokemonByNameQuery('bulbasaur');
