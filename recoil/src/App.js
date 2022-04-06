@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import {RecoilRoot} from "recoil";
+import TaskList from "./components/taskList/TaskList";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="p-16 h-full">
+            <div className="max-w-6xl ml-auto mr-auto shadow-2xl rounded-xl p-8">
+                <RecoilRoot>
+                    <TaskList/>
+                </RecoilRoot>
+            </div>
+        </div>
+    );
 }
 
 export default App;
